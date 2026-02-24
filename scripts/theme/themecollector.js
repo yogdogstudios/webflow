@@ -66,7 +66,7 @@ function getColorThemes() {
     return;
   }
 
-  const firstLink = document.querySelectorAll('link[rel="stylesheet"]')[1];
+  const firstLink = document.querySelectorAll('link[rel="stylesheet"]')[0];
   if (!firstLink?.href) return null;
 
   const themeVariables = new Set(),
